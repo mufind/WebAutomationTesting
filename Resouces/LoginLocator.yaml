@@ -1,0 +1,4 @@
+email_login: //input[@id="email"]
+password_login: //input[@id="passwd"]
+button_login: //button[@id="SubmitLogin"]
+verifikasi: //span[@class="navigation_page"]

@@ -1,0 +1,6 @@
+contact: //div[@id="contact-link"]
+cs: //*[@id="id_contact"]
+order: //*[@name="id_order"]
+send: //*[@id="submitMessage"]
+message: //*[@id="message"]
+verifikasi3: //*[@class="alert alert-success"]

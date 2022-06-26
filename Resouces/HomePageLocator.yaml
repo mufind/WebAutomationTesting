@@ -1,0 +1,4 @@
+gambar_sale: //img[@class="img-responsive"]
+logo: //img[@class="logo img-responsive"]
+menu: //ul[@class="sf-menu clearfix menu-content sf-js-enabled sf-arrows"]
+item: //img[@class="item-img"]

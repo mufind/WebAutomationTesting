@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.3rc1 on win32)" generated="20220626 18:32:06.260" rpa="false" schemaversion="3">
+<suite id="s1" name="Login" source="E:\WebAutomationTesting\Steps\login.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${base_url}</arg>
+<arg>${base_type}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220626 18:32:06.577" level="INFO">Opening browser 'gc' to base url 'http://automationpractice.com/'.</msg>
+<status status="PASS" starttime="20220626 18:32:06.576" endtime="20220626 18:32:24.461"/>
+</kw>
+<test id="s1-t1" name="login user" line="14">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sign_in}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220626 18:32:24.464" level="INFO">Clicking element '//a[@class="login"]'.</msg>
+<status status="PASS" starttime="20220626 18:32:24.463" endtime="20220626 18:32:27.780"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_login}</arg>
+<arg>fadhil@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220626 18:32:27.781" level="INFO">Typing text 'fadhil@gmail.com' into text field '//input[@id="email"]'.</msg>
+<status status="PASS" starttime="20220626 18:32:27.781" endtime="20220626 18:32:27.915"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_login}</arg>
+<arg>asdfasdf</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220626 18:32:27.917" level="INFO">Typing text 'asdfasdf' into text field '//input[@id="passwd"]'.</msg>
+<status status="PASS" starttime="20220626 18:32:27.916" endtime="20220626 18:32:28.025"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220626 18:32:28.026" level="INFO">Clicking element '//button[@id="SubmitLogin"]'.</msg>
+<status status="PASS" starttime="20220626 18:32:28.026" endtime="20220626 18:32:30.769"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${verifikasi}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220626 18:32:31.145" level="INFO">Element '//span[@class="navigation_page"]' is displayed.</msg>
+<status status="PASS" starttime="20220626 18:32:30.770" endtime="20220626 18:32:31.145"/>
+</kw>
+<status status="PASS" starttime="20220626 18:32:24.462" endtime="20220626 18:32:31.145"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220626 18:32:31.147" endtime="20220626 18:32:33.428"/>
+</kw>
+<status status="PASS" starttime="20220626 18:32:06.262" endtime="20220626 18:32:33.428"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
